@@ -1,10 +1,11 @@
-# Proyecto-P
-
-Hi my name is Alejandro Gonzalez, in this presentation I'm gonna explain a code that simulates a small parking lot system.
-The objective of this program is to manage vehicles inside a parking lot with ten spaces.
+# Hi my name is Alejandro Gonzalez, and this is project-parking
+------------------------------------------------------------------
+This presentation about a code that simulates a small parking lot system.
+The objective of this program is to manage vehicles inside a parking lot with 10 spaces.
 The program allows the user to check available spaces, insert a vehicle using a license plate, remove a vehicle, and exit the program.
-I am going to explain the code step by step and describe how the program works.
-
+I am going to explain the code step by step.
+________________________________________________________________________________________________
+#
 At the beginning there is a variable called Parqueadero.
 This variable is a list that represents the parking lot.
 The list contains ten elements, and each element represents one parking space.
@@ -24,7 +25,7 @@ The while True statement creates an infinite loop.
 
 This means the program keeps running continuously until it receives a command to stop.
 
-Inside this loop, the program is displaying a menu to the user.
+Inside this loop, the program is showing a menu to the user.
 
 The menu shows four options:
 
@@ -34,7 +35,7 @@ Insert a vehicle
 
 Remove a vehicle
 
-Exit the program
+And exit the program
 
 At this moment, the program is waiting for the user to choose an option.
 
@@ -43,6 +44,8 @@ The program uses the input() function to read the user's selection and store it 
 If the user chooses option "1", the program shows the current state of the parking lot.
 
 First, the program prints a title that indicates the parking lot status.
+
+And show the empty space in it.
 
 Next, the program uses a for loop.
 
