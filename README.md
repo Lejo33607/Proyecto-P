@@ -1,24 +1,8 @@
 # Project Parking
 
-### Alejandro Gonzalez
+### Alejandro Gonzalez and this is my code
 
----
-
-## Introduction
-
-Hi, my name is Alejandro Gonzalez and this is **Project Parking**.
-
-This program simulates a small parking lot system.
-The objective of the program is to manage vehicles inside a parking lot with **10 spaces**.
-
-The user can:
-
-* View available spaces
-* Insert a vehicle using its license plate
-* Remove a vehicle
-* Exit the program
-
-Now I will explain how the code works.
+I'll explain how the code work.
 
 ---
 
@@ -32,24 +16,19 @@ The list contains **10 elements**, and each element represents one parking space
 
 Each space is initialized with a dot `"."`, which represents an **empty space**.
 
-This makes it easier to identify which spaces are free and which are occupied.
+This makes it easy to identify which spaces are free and which are occupied.
 
 ---
 
-## Program Loop and Menu
+## Program Loop
 
 After creating the parking lot, the program starts a loop using **`while True`**.
 
 This creates an **infinite loop**, which keeps the program running until the user decides to exit.
 
-Inside the loop, the program shows a **menu with four options**:
+Inside this loop, the program shows a menu where the user can choose different actions.
 
-1. View parking lot status
-2. Insert a vehicle
-3. Remove a vehicle
-4. Exit the program
-
-The program reads the user's selection using the **`input()`** function and stores it in a variable called **opcion**.
+The user's selection is read using the **`input()`** function and stored in a variable called **opcion**.
 
 ---
 
@@ -57,14 +36,15 @@ The program reads the user's selection using the **`input()`** function and stor
 
 If the user selects option **1**, the program displays the current state of the parking lot.
 
-It uses a **for loop** to go through each space in the list.
+To do this, the program uses a **for loop** that goes through each position in the list.
 
-For each position, the program checks if the value is `"."`.
+For each space, the program checks if the value is `"."`.
 
-* If it is `"."`, the space is empty.
-* If not, the program shows the **license plate** of the vehicle parked there.
+If it is `"."`, the space is empty.
 
-This allows the user to see all parking spaces one by one.
+If it is not `"."`, the program prints the **license plate** of the vehicle parked in that space.
+
+This allows the user to see the status of all parking spaces.
 
 ---
 
@@ -72,22 +52,22 @@ This allows the user to see all parking spaces one by one.
 
 If the user selects option **2**, the program asks for the **license plate**.
 
-Before inserting the vehicle, the program performs two checks:
+Before inserting the vehicle, the program performs two checks.
 
-* It verifies if the vehicle is **already inside the parking lot**.
-* It checks if the parking lot is **full**.
+First, it verifies if the vehicle is **already in the parking lot**.
 
-If there is space available, the program searches for the **first empty spot** `"."` using a **for loop**.
+Second, it checks if the parking lot is **full**.
 
-When it finds one, it replaces the dot with the **license plate** and parks the vehicle there.
+If there is an empty space available, the program searches for the **first spot containing `"."`** using another **for loop**.
 
-Then the program uses **`break`** to stop the loop and ensure the vehicle is inserted only once.
+When it finds one, it replaces the dot with the **license plate**.
+
+After inserting the vehicle, the program uses **`break`** to stop the loop so the vehicle is inserted only once.
 
 ---
 
 ## Exiting the Program
 
-If the user selects option **4**, the program prints the message **"Saliendo"**.
+If the user selects option **4**, the program prints **"Saliendo"**.
 
-Then it uses **`break`** to stop the **`while True` loop**, and the program finishes.
-
+Then the program uses **`break`** to stop the **`while True` loop**, and the program ends.
