@@ -1,54 +1,48 @@
-# Project Parking
+# Parking Lot Management System
 
-### Alejandro Gonzalez
-# And this is my code
----
+A small Python command-line application that simulates a parking lot with 10 spaces. This educational project practices lists, loops, conditionals, user input, and basic state management.
 
-## Parking Lot Structure
+## Features
 
-At the beginning of the program there is a variable called **Parqueadero**.
+- Display the status of all 10 parking spaces.
+- Register a vehicle using its license plate.
+- Prevent the same plate from being registered twice while it is parked.
+- Check whether the parking lot is full.
+- Remove a vehicle and make its space available again.
 
-This variable is a **list** that represents the parking lot.
+## How it works
 
-The list has **10 elements**, and each element represents one parking space.
+The application stores the parking lot in a Python list named `Parqueadero`. Each position represents one parking space:
 
-Each space is initialized with a dot `"."`, which represents an **empty space**.
+- `.` means the space is empty.
+- A license plate means a vehicle occupies that space.
 
----
+The menu runs in a `while` loop and lets the user view spaces, register a vehicle, remove a vehicle, or exit the program.
 
-## Program Loop
+## Requirements
 
-The program runs inside a **`while True` loop**, which keeps it running continuously.
+- Python 3
 
-Inside this loop, the program shows a menu and waits for the user to choose an option using the **`input()`** function.
+## Run locally
 
-The selected option is stored in a variable called **opcion**.
+```bash
+git clone https://github.com/Lejo33607/Proyecto-P.git
+cd Proyecto-P
+python main.py
+```
 
----
+## Concepts practiced
 
-## Viewing Parking Spaces
+- Lists and indexed access.
+- `while` and `for` loops.
+- Conditional logic.
+- Searching for values in a list.
+- Updating application state based on user actions.
 
-If the user selects option **1**, the program shows the parking lot status.
+## Current scope
 
-It uses a **for loop** to go through each position in the list.
+This is a beginner-level console exercise. It stores data in memory, so the parking information is reset when the program exits. It does not use a database or persistent storage.
 
-If the value is `"."`, the space is empty.
-If it is not `"."`, the program shows the **license plate** of the vehicle parked there.
+## Author
 
----
-
-## Inserting a Vehicle
-
-If the user selects option **2**, the program asks for the **license plate**.
-
-The program checks if the vehicle is already in the parking lot and if there are available spaces.
-
-If a space is available, it finds the **first empty spot `"."`** and replaces it with the license plate.
-
-After inserting the vehicle, the program uses **`break`** to stop the loop.
-
----
-
-## Exiting the Program
-
-If the user selects option **4**, the program prints **"Saliendo"** and uses **`break`** to stop the **`while True` loop**, ending the program.
+Alejandro González
