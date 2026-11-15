@@ -43,7 +43,7 @@ while True:
 
         if placa in Parqueadero:
             posicion = Parqueadero.index(placa)
-            Parqueadero[posicion] = ""
+            Parqueadero[posicion] = "."
             print(f"Vehiculo retirado del espacio {posicion+1}")
 
         else:
